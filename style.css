@@ -1,3 +1,176 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+/* This applies from 0px to 320px */
+
+.title {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 10vmin;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    margin-top: 5vmin;
+}
+
+.description {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 4vmin;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5vmin;
+}
+
+.container {
+    border-radius: 2vmin;
+    padding: 6vmin 4vmin;
+}
+
+.question {
+    margin-bottom: 5vmin;
+    flex-wrap: wrap;
+}
+
+.text {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 4vmin;
+    font-weight: 300;
+    margin-bottom: 2vmin;
+}
+
+.form {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 3vmin;
+    font-weight: 300;
+    width: 100%;
+    border-radius: 0.5vmin;
+}
+
+.italicized-bold {
+    font-style: italic;
+    font-weight: 400;
+
+}
+
+[type="checkbox"] {
+    display: none;
+}
+
+[type="checkbox"] + *::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 4vmin;
+    height: 4vmin;   
+    border-radius: 10%;
+    border-style: solid;
+    border-width: 0.1vmin;
+    border-color: black;
+    margin-right: 1vmin;
+}
+
+[type="checkbox"]:checked + *::before {
+    content: "✓";
+    color: white;
+    text-align: center;
+    background: black;
+    border-color: black;
+}
+
+[type="checkbox"]:checked + * {
+    color: black;
+}
+
+.box-line {
+    margin-bottom: 1vmin;
+}
+
+[type="radio"] {
+    display: none;
+}
+
+[type="radio"] + *::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 4vmin;
+    height: 4vmin;   
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 0.1vmin;
+    border-color: black;
+    margin-right: 1vmin;
+}
+
+[type="radio"]:checked + *::before {
+    content: "✓";
+    color: white;
+    text-align: center;
+    background: black;
+    border-color: black;
+}
+
+[type="radio"]:checked + * {
+    color: black;
+}
+
+.button-container {
+    height: 10vmin;
+    position: relative;
+}
+
+.submit {
+    height: 10vmin;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 4vmin;
+    font-weight: 300;
+}
+
+
+
+@media only screen and (min-width: 360px) and (max-width: 374px) {}
+
+@media only screen and (min-width: 375px) and (max-width: 413px) {}
+
+@media only screen and (min-width: 414px) and (max-width: 479px) {}
+
+@media only screen and (min-width: 480px) and (max-width: 567px) {}
+
+@media only screen and (min-width: 568px) and (max-width: 639px) {}
+
+@media only screen and (min-width: 640px) and (max-width: 666px) {}
+
+@media only screen and (min-width: 667px) and (max-width: 735px) {}
+
+@media only screen and (min-width: 736px) and (max-width: 767px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 799px) {}
+
+@media only screen and (min-width: 800px) and (max-width: 811px) {}
+
+@media only screen and (min-width: 812px) and (max-width: 833px) {}
+
+@media only screen and (min-width: 834px) and (max-width: 1023px) {}
+  
+@media only screen and (min-width: 1024px) and (max-width: 1111px) {}
+
+@media only screen and (min-width: 1112px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1279px) {}
+
+@media only screen and (min-width: 1280px) and (max-width: 1365px) {}
+
+@media only screen and (min-width: 1366px) and (max-width: 1599px) {}
+
+@media only screen and (min-width: 1600px) {}
+    
